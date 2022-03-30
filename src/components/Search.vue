@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
     data() {
         return {
@@ -64,8 +66,10 @@ export default {
         }
     },
     methods: {
-        apply() {
-
+        async apply() {
+            const OMDB_API_KEY = '74cd1a89' //1,000days left from 22.03.30
+            const res = await axios.get(`https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${this.title}&type=${this.type}&y=${this.year}&page=1`)
+            console.log(res)
         }
     }
 }
