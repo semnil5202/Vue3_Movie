@@ -55,15 +55,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main";
-
 .about {
   text-align: center;
   .photo {
     width: 250px;
     height: 250px;
     margin: 40px auto 20px;
-    padding: 20px;
+    padding: 24px;
     border: 10px solid $gray-300;
     border-radius: 50%;
     box-sizing: border-box;
