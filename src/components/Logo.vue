@@ -12,8 +12,9 @@
     font-size: 20px;
     color: $black;
     text-decoration: none;
+    transition: .2s;
     &:hover {
-        color: $black;
+        color: $primary;
     }
     span {
         color: $primary;

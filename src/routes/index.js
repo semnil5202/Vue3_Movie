@@ -5,7 +5,12 @@ import About from './About'
 import NotFound from './NotFound'
 
 export default createRouter({
+    //Hash
     history: createWebHashHistory(),
+    //Scroll reset
+    scrollBehavior() {
+        return { top : 0 }
+    },
     routes: [
         {
             path: '/',
